@@ -9,7 +9,6 @@
 ![Express.js](https://img.shields.io/badge/Express.js-v4.19-lightgrey?style=for-the-badge&logo=express)
 ![MongoDB](https://img.shields.io/badge/MongoDB-v8.4-green?style=for-the-badge&logo=mongodb)
 ![ESP32](https://img.shields.io/badge/Target-ESP32--S3-red?style=for-the-badge&logo=espressif)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 <p align="center">
   <b>An end-to-end, real-time automated temple donation vault monitoring & financial auditing platform powered by ESP32 microcontrollers, inductive/optical hardware sensors, Express.js backend, and a modern React dashboard.</b>
@@ -61,7 +60,6 @@ Traditional temple donation collection boxes (*Hundis*) face significant operati
   - [2. Frontend Setup](#2-frontend-setup)
 - [🎮 Built-in ESP32 Pulse Simulator](#-built-in-esp32-pulse-simulator)
 - [🔒 Security & Authentication](#-security--authentication)
-- [📄 License](#-license)
 
 ---
 
@@ -586,14 +584,9 @@ Smart Hundi includes a **built-in interactive ESP32 Hardware Simulator** inside 
 
 ---
 
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for more details.
-
----
-
 <div align="center">
 
 <b>Smart Hundi System</b> — Engineered for Precision, Transparency & Security.
 
 </div>
+
