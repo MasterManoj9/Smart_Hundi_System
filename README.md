@@ -104,13 +104,13 @@ graph TD
     subgraph Server Layer ["Node.js / Express Backend"]
         API["📡 Express API Server<br/>(Port 5001)"]
         AuthMid["🔑 JWT Middleware"]
-        RouterIoT["`/api/iot` Routes"]
-        RouterHundi["`/api/hundi` Routes"]
-        RouterTxn["`/api/transactions` Routes"]
+        RouterIoT["/api/iot Routes"]
+        RouterHundi["/api/hundi Routes"]
+        RouterTxn["/api/transactions Routes"]
         Store["💾 Hundi Store Engine<br/>(Dual-Mode In-Memory / MongoDB)"]
         
-        ESP32 -->|HTTP POST JSON<br/>`/api/iot/pulse`| RouterIoT
-        ESP32 -->|Telemetry Heartbeat<br/>`/api/iot/telemetry`| RouterIoT
+        ESP32 -->|HTTP POST JSON<br/>/api/iot/pulse| RouterIoT
+        ESP32 -->|Telemetry Heartbeat<br/>/api/iot/telemetry| RouterIoT
         
         RouterIoT --> Store
         RouterHundi --> Store
@@ -124,9 +124,9 @@ graph TD
         Sim["🎮 Interactive ESP32<br/>Pulse Simulator Modal"]
         
         UI <--> HContext
-        HContext -->|GET `/api/hundi/summary`<br/>4s Polling| RouterHundi
-        HContext -->|GET `/api/transactions`| RouterTxn
-        Sim -->|Simulated POST `/api/iot/pulse`| RouterIoT
+        HContext -->|GET /api/hundi/summary<br/>4s Polling| RouterHundi
+        HContext -->|GET /api/transactions| RouterTxn
+        Sim -->|Simulated POST /api/iot/pulse| RouterIoT
     end
 ```
 
