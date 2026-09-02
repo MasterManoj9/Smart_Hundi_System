@@ -1,0 +1,45 @@
+
+
+1. Backend Security & Configuration
+- Updated backend/routes/iot.js.
+- Replaced the hardcoded API key check with an environment variable fallback.
+- The API key is now read using process.env.ESP32_API_KEY.
+
+2. Security & Sensitive Data Masking in UI
+- Updated frontend/src/components/Esp32SimulatorModal.jsx.
+- Masked the IoT API key in the JSON payload preview.
+- Sensitive credentials are no longer displayed directly on the screen.
+
+3. Labeling & Prototype Accuracy
+- Updated frontend/src/components/AnalyticsSection.jsx.
+- Changed “Peak Hours” to “Estimated Peak Hours”.
+- Changed “Avg Daily Inflow” to “Sample Daily Inflow”.
+- Added a clear “Prototype data” indication.
+- Removed the static 99.94% detection accuracy claim and replaced it with a prototype/target indication.
+
+4. Prototype Status & Page Badges
+- Updated the sidebar status to “Prototype — Hardware integration under development”.
+- Standardized the “Prototype” badge on Dashboard, Coins, Live Collection and Notes pages.
+- Removed redundant “Simulation Mode” badges from Storage and Transactions pages.
+
+5. UI Cleanup & Documentation Alignment
+- Removed the placeholder/speculative “AI Note Detection” panel from the Notes page.
+- Updated the System Diagnostics page by replacing raw code snippets containing hardcoded API keys with an IoT architecture description.
+- Updated the Settings page to show “MongoDB Integration: Planned” in the system specifications.
+
+Files Modified:
+- backend/routes/iot.js
+- frontend/src/components/Esp32SimulatorModal.jsx
+- frontend/src/components/AnalyticsSection.jsx
+- frontend/src/components/Sidebar.jsx
+- frontend/src/pages/DashboardPage.jsx
+- frontend/src/pages/CoinsPage.jsx
+- frontend/src/pages/LiveCollectionPage.jsx
+- frontend/src/pages/NotesPage.jsx
+- frontend/src/pages/StoragePage.jsx
+- frontend/src/pages/TransactionsPage.jsx
+- frontend/src/pages/SystemDiagnosticsPage.jsx
+- frontend/src/pages/SettingsPage.jsx
+
+Summary:
+The changes mainly improve backend security, protect sensitive API-key information, make prototype information more transparent, clean up the user interface, and align the website documentation with the current implementation status.
